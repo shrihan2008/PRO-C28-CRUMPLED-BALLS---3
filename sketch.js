@@ -25,18 +25,16 @@ function preload() {
     //Create the Bodies Here.
 
     Engine.run(engine);
-    ball= new Ball(300,400,50);
+    ball= new Ball(300,400,70);
     
-bin=new Dustbin(575,629,10,110);
-bin1=new Dustbin(625,680,100,10)
-bin2=new Dustbin(680,630,10,110);  
-ground=new Ground(0,700,10000,40);
-launch1=createSprite(630,625)
-launch1.addImage(launch)
-launch.resize(100,100)
-shot=new Launch(ball.body,{x:200, y:50})
-
-  
+    bin=new Dustbin(575,629,10,110);
+    bin1=new Dustbin(625,680,100,10)
+    bin2=new Dustbin(680,630,10,110);  
+    ground=new Ground(0,700,10000,40);
+    launch1=createSprite(630,625)
+    launch1.addImage(launch)
+    launch.resize(100,100)
+    shot=new Launcher(ball.body,{x:100, y:150})  
   }
 
 
