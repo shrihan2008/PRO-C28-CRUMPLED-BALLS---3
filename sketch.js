@@ -25,7 +25,7 @@ function preload() {
     //Create the Bodies Here.
 
     Engine.run(engine);
-    ball= new Ball(300,400,70);
+    ball= new Ball(300,400,50);
     
     bin=new Dustbin(575,629,10,110);
     bin1=new Dustbin(625,680,100,10)
@@ -57,7 +57,7 @@ function preload() {
   {
     if(keyCode===UP_ARROW  ){
       
-    Matter.Body.applyForce(ball.body,ball.body.position,{x:350,y:-85});
+    Matter.Body.applyForce(ball.body,ball.body.position,{x:1000,y:-85});
   }
 }
 
